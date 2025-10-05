@@ -1,2 +1,3 @@
-# exa-raycast
-Exa Raycast extension.
+# Exa
+
+Interact with the Exa API.
