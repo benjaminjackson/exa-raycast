@@ -7,7 +7,10 @@
 
 /* eslint-disable @typescript-eslint/ban-types */
 
-type ExtensionPreferences = {}
+type ExtensionPreferences = {
+  /** Exa API Key - Your Exa API key for authentication */
+  "apiKey": string
+}
 
 /** Preferences accessible in all the extension's commands */
 declare type Preferences = ExtensionPreferences
@@ -19,6 +22,9 @@ declare namespace Preferences {
 
 declare namespace Arguments {
   /** Arguments passed to the `ask-exa` command */
-  export type AskExa = {}
+  export type AskExa = {
+  /** What would you like to know? */
+  "question": string
+}
 }
 

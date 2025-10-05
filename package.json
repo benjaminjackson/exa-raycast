@@ -2,10 +2,9 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "exa",
   "title": "Exa",
-  "description": "Interact with the Exa API.",
-  "icon": "extension-icon.png",
+  "description": "AI-powered question answering using Exa API",
+  "icon": "icon.png",
   "author": "benjaminjackson",
-  "owner": "hear-me-out",
   "platforms": [
     "macOS",
     "Windows"
@@ -18,8 +17,25 @@
     {
       "name": "ask-exa",
       "title": "Ask Exa",
-      "description": "Asks Exa via the answers API.",
-      "mode": "view"
+      "description": "Get AI-powered answers to your questions",
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "question",
+          "type": "text",
+          "placeholder": "What would you like to know?",
+          "required": true
+        }
+      ]
+    }
+  ],
+  "preferences": [
+    {
+      "name": "apiKey",
+      "title": "Exa API Key",
+      "description": "Your Exa API key for authentication",
+      "type": "password",
+      "required": true
     }
   ],
   "dependencies": {
